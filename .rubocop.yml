@@ -1,0 +1,28 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  TargetRailsVersion: 5.1
+  DisplayCopNames: true
+  Exclude:
+    - "bin/**/*"
+    - "db/schema.rb"
+    - "db/migrate/*"
+    - "vendor/**/*"
+
+Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - "config/environments/*"
+    - "spec/**/*"
+
+Metrics/LineLength:
+  Exclude:
+    - "config/**/*"
+    - "Rakefile"
+  
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false  
