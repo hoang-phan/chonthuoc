@@ -17,9 +17,17 @@ gem 'sass-rails'
 gem 'uglifier'
 
 group :development, :test do
-  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails'
+  gem 'faker'
   gem 'haml-lint'
+  gem 'pry-meta'
+  gem 'rspec-rails'
   gem 'rubocop'
+end
+
+group :test do
+  gem 'shoulda-matchers'
+  gem 'simplecov'
 end
 
 group :development do
